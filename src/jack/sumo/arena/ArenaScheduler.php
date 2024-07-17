@@ -43,9 +43,9 @@ class ArenaScheduler extends Task {
     }
 
     /**
-     * @param int $currentTick
+     * @param $currentTick
      */
-    public function onRun(int $currentTick) {
+    public function onRun($currentTick) {
         $this->reloadSign();
 
         if($this->plugin->setup) return;
